@@ -1,21 +1,21 @@
 {
-  "name": "laianavarroolivella",
+  "name": "HypercubedLabs",
   "version": "1.0.0",
-  "description": "My personal website",
+  "description": "StartUp",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaiaNO/LaiaNavarroOlivella.git"
+    "url": "git+https://github.com/LaiaNO/hypercubed.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LaiaNO/LaiaNavarroOlivella/issues"
+    "url": "https://github.com/LaiaNO/hypercubed/issues"
   },
-  "homepage": "https://github.com/LaiaNO/LaiaNavarroOlivella#readme",
+  "homepage": "https://github.com/LaiaNO/hypercubed#readme",
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
