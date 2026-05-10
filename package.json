@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/LaiaNO/hypercubed/issues"
   },
-  "homepage": "https://github.com/LaiaNO/hypercubed#readme",
+  "homepage": "https://hypercubedlabs.com",
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
