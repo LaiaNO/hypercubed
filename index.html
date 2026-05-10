@@ -4,62 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HYPERCUBED LABS</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="resources/images/logo/LogoHypercubed.ico"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+    <title>HypercubedLabs — Creative Solutions Studio</title>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="index.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/logo/LogoHypercubed.ico" />
+
+    <!-- Fraunces (warm organic serif) + DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
-  <!-- BODY OF THE WEBPAGE -->
+  
   <body>
-    <!-- MAIN -->
-    <main>
-      <!-- Reinforcement Mesage-->
-      <section class="text-center" style="background-color: #284854">
-        <div class="row">
-          <p class="lead text-muted"></p>
-          <p class="lead text-muted">STARTUP</p>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV DONE-->
+    <nav>
+      <a class="nav-logo" href="#">
+        <img src="resources/images/logo/LogoHypercubed.png" alt="HypercubedLabs" />
+        <span class="nav-logo-text">Hyper<em>cubed</em>Labs</span>
+      </a>
+    </nav>
+
+    <!-- Mobile dropdown -->
+    <div class="nav-mobile" id="navMobile">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Who we help</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO — split panel -->
+    <section id="hero">
+
+      <!-- LEFT — warm, readable, focal point -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">Creative Solutions Studio</div>
+        <h1 class="hero-title">
+          We make<br>
+          <em>ideas into</em>
+          <span class="teal">real things.</span>
+        </h1>
+        <p class="hero-desc">
+          3D printing, resin, websites, branding and personalised gifts — for florists, cafés, local shops and personal projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-outline">Get in touch</a>
         </div>
-      </section>
-      <!-- FIRST INTRODUCTION-->
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">HYPERCUBED</h1>
-            <p class="lead text-muted">Coming Soon</p>
+      </div>
+
+      <!-- RIGHT — blue, atmospheric, service overview -->
+      <div class="hero-right">
+        <div class="hero-orb"></div>
+          <div class="hero-pills">
+            <a class="hero-pill" href="#gallery" data-slide="0">
+              <span class="pill-dot dot-teal"></span>
+              🖨️ &nbsp;3D Printing &amp; Resin casting
+            </a>
+            <a class="hero-pill" href="#gallery" data-slide="1">
+              <span class="pill-dot dot-blue"></span>
+              🌐 &nbsp;Websites
+            </a>
+            <a class="hero-pill" href="#gallery" data-slide="2">
+              <span class="pill-dot dot-sand"></span>
+              🎨 &nbsp;Branding &amp; visual identity
+            </a>
+            <a class="hero-pill" href="#gallery" data-slide="3">
+              <span class="pill-dot dot-teal"></span>
+              ♟ &nbsp;Custom gifts &amp; decoration
+            </a>
+            <a class="hero-pill" href="#gallery" data-slide="4">
+              <span class="pill-dot dot-blue"></span>
+              📦 &nbsp;Marketing objects &amp; packaging
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="mt-auto text-center" style="background-color: #232c72">
-      <!-- Footer Mesage-->
-      <section class="bg-light text-center">
-        <div class="row">
-          <p class="lead text-muted"></p>
-          <p class="lead text-muted">HYPERCUBED LABS</p>
+      </div>
+
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+      <div class="marquee-inner">
+        <span class="marquee-item">3D Printing <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Resin Art <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Websites <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Custom Gifts <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Automatitzation <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Local Business <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Chess Pieces <span class="marquee-dot"></span></span>
+        <span class="marquee-item">3D Printing <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Resin Art <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Websites <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Custom Gifts <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Automatitzation <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Local Business <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Chess Pieces <span class="marquee-dot"></span></span>
+      </div>
+    </div>
+    
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="section-eyebrow">Get in touch</div>
+        <h2 class="contact-title">
+          Tell us your<br>
+          <em>idea.</em>
+        </h2>
+        <p class="contact-sub">Big or small, unusual or simple, we'd love to hear what you have in mind and see if we can bring it to life.</p>
+        <div class="contact-actions">
+          <a href="mailto:laianavarro@hypercubedlabs.com" class="btn-teal">✉ Send an email</a>
         </div>
-      </section>
+      </div>
+
+      <!-- Cube decoration -->
+      <div class="contact-cube">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="55" y="55" width="95" height="95" stroke="#6fa8cc" stroke-width="1.5"/>
+          <rect x="25" y="25" width="95" height="95" stroke="#4a7fa5" stroke-width="1"/>
+          <line x1="25" y1="25" x2="55" y2="55" stroke="#4a7fa5" stroke-width="1"/>
+          <line x1="120" y1="25" x2="150" y2="55" stroke="#4a7fa5" stroke-width="1"/>
+          <line x1="25" y1="120" x2="55" y2="150" stroke="#4a7fa5" stroke-width="1"/>
+          <line x1="120" y1="120" x2="150" y2="150" stroke="#4a7fa5" stroke-width="1"/>
+          <!-- teal diagonals -->
+          <line x1="55" y1="55" x2="150" y2="150" stroke="#2ab8a0" stroke-width="0.8" stroke-dasharray="4 4"/>
+          <line x1="150" y1="55" x2="55" y2="150" stroke="#2ab8a0" stroke-width="0.8" stroke-dasharray="4 4"/>
+          <circle cx="100" cy="100" r="45" stroke="#4a7fa5" stroke-width="0.5" stroke-dasharray="3 6"/>
+          <circle cx="100" cy="100" r="22" stroke="#2ab8a0" stroke-width="0.5" stroke-dasharray="2 5"/>
+        </svg>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo-text">Hyper<em>cubed</em>Labs</div>
+      <div class="footer-copy">© 2021 HypercubedLabs · Creative Solutions Studio</div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
   </body>
 </html>
